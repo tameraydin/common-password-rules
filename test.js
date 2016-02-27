@@ -1,5 +1,5 @@
 import test from 'ava';
-import commonPasswordRules from '../src/index';
+import commonPasswordRules from './index.es2015';
 
 const cPR = commonPasswordRules;
 

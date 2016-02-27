@@ -2,14 +2,13 @@
   "name": "common-password-rules",
   "version": "0.1.0",
   "description": "Validation methods for some common password policies",
-  "main": "dist/common-password-rules.js",
   "scripts": {
-    "watch": "onchange 'src/*.js' 'test/*.js' -- npm run validate",
+    "watch": "onchange '*.es2015.js' 'test.js' -- npm run validate",
     "validate": "eslint src && ava || true",
     "test": "ava",
     "coverage": "nyc npm test",
     "coveralls": "npm run coverage && nyc report --reporter=text-lcov | coveralls",
-    "transpile": "mkdirp 'dist' && browserify --standalone 'common-password-rules' src/index.js -o dist/common-password-rules.js -t [ babelify --presets [ es2015 ] ]"
+    "transpile": "browserify --standalone 'common-password-rules' index.es2015.js -o index.js -t [ babelify --presets [ es2015 ] ]"
   },
   "repository": {
     "type": "git",
