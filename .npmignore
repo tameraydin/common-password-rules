@@ -1,5 +1,6 @@
 coverage
 test.js
+JSDOC.md
 .nyc_output
 .gitignore
 .travis.yml

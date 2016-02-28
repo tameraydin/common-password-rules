@@ -42,6 +42,9 @@ const containsSequentialsFrom = function(orderedLists, password, times) {
   return found;
 };
 
+/**
+ * @exports commonPasswordRules
+ */
 module.exports = {
   /**
    * Checks whether the given password contains a lowercase letter.

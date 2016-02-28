@@ -8,7 +8,8 @@
     "test": "ava",
     "coverage": "nyc npm test",
     "coveralls": "npm run coverage && nyc report --reporter=text-lcov | coveralls",
-    "transpile": "browserify --standalone 'common-password-rules' index.es2015.js -o index.js -t [ babelify --presets [ es2015 ] ]"
+    "transpile": "browserify --standalone 'common-password-rules' index.es2015.js -o index.js -t [ babelify --presets [ es2015 ] ]",
+    "jsdoc": "jsdoc2md index.es2015.js > JSDOC.md"
   },
   "repository": {
     "type": "git",
@@ -25,10 +26,12 @@
     "strength"
   ],
   "author": "Tamer Aydin (http://tamerayd.in)",
-  "contributors": [{
-    "name": "Tamer Aydin",
-    "url": "http://tamerayd.in"
-  }],
+  "contributors": [
+    {
+      "name": "Tamer Aydin",
+      "url": "http://tamerayd.in"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tameraydin/common-password-rules/issues"
@@ -41,6 +44,7 @@
     "browserify": "^13.0.0",
     "coveralls": "^2.11.6",
     "eslint": "^2.1.0",
+    "jsdoc-to-markdown": "^1.3.3",
     "mkdirp": "^0.5.1",
     "nyc": "^5.6.0",
     "onchange": "^2.0.0"
