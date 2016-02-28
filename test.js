@@ -66,17 +66,17 @@ test('excludesSequentialLetters()', t => {
   t.is(cPR.excludesSequentialLetters('AxBy', 2), true);
 });
 
-test('excludesSequentialNumbers()', t => {
-  t.is(cPR.excludesSequentialNumbers('abc789'), false);
-  t.is(cPR.excludesSequentialNumbers('x901yz'), true);
+test('excludesSequentialDigits()', t => {
+  t.is(cPR.excludesSequentialDigits('abc789'), false);
+  t.is(cPR.excludesSequentialDigits('x901yz'), true);
 
-  t.is(cPR.excludesSequentialNumbers('x01y', 2), false);
-  t.is(cPR.excludesSequentialNumbers('A1B2', 2), true);
+  t.is(cPR.excludesSequentialDigits('x01y', 2), false);
+  t.is(cPR.excludesSequentialDigits('A1B2', 2), true);
 });
 
-test('excludesPossibleBirthDate()', t => {
-  t.is(cPR.excludesPossibleBirthDate('foo1990'), false);
-  t.is(cPR.excludesPossibleBirthDate('01011960'), false);
-  t.is(cPR.excludesPossibleBirthDate('199bar'), true);
-  t.is(cPR.excludesPossibleBirthDate('3012200'), true);
+test('excludesBirthDate()', t => {
+  t.is(cPR.excludesBirthDate('foo1990'), false);
+  t.is(cPR.excludesBirthDate('01011960'), false);
+  t.is(cPR.excludesBirthDate('199bar'), true);
+  t.is(cPR.excludesBirthDate('3012200'), true);
 });
