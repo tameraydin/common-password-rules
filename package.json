@@ -1,6 +1,6 @@
 {
   "name": "common-password-rules",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Validation methods for some common password policies",
   "scripts": {
     "watch": "onchange '*.es2015.js' 'test.js' -- npm run validate",

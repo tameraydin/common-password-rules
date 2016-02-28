@@ -24,7 +24,7 @@ cPR.containsLowerCase('Foo'); // => true
     * [.containsDigit(password, [times])](#module_commonPasswordRules.containsDigit) ⇒ <code>Boolean</code>
     * [.containsSpecialChar(password, [times])](#module_commonPasswordRules.containsSpecialChar) ⇒ <code>Boolean</code>
     * [.contains(password, charSet, [times])](#module_commonPasswordRules.contains) ⇒ <code>Boolean</code>
-    * [.excludesRecurringChars(password, charSet, [times])](#module_commonPasswordRules.excludesRecurringChars) ⇒ <code>Boolean</code>
+    * [.excludesRecurringChars(password, [times])](#module_commonPasswordRules.excludesRecurringChars) ⇒ <code>Boolean</code>
     * [.excludesSequentialLetters(password, [times])](#module_commonPasswordRules.excludesSequentialLetters) ⇒ <code>Boolean</code>
     * [.excludesSequentialDigits(password, [times])](#module_commonPasswordRules.excludesSequentialDigits) ⇒ <code>Boolean</code>
     * [.excludesBirthDate(password)](#module_commonPasswordRules.excludesBirthDate) ⇒ <code>Boolean</code>
@@ -76,14 +76,13 @@ Checks whether the given password contains a character from the given set.
 | [times] | <code>Integer</code> | <code>1</code> | Minimum number of required characters |
 
 <a name="module_commonPasswordRules.excludesRecurringChars"></a>
-### excludesRecurringChars(password, charSet, [times]) ⇒ <code>Boolean</code>
+### excludesRecurringChars(password, [times]) ⇒ <code>Boolean</code>
 Checks that the given password does not contain recurring alphanumeric
 characters.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | password | <code>String</code> |  | Password string |
-| charSet | <code>String</code> |  | A regex character set |
 | [times] | <code>Integer</code> | <code>3</code> | Minimum recursion number |
 
 <a name="module_commonPasswordRules.excludesSequentialLetters"></a>

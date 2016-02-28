@@ -107,7 +107,6 @@ module.exports = {
    * characters.
    *
    * @param  {String}  password  Password string
-   * @param  {String}  charSet   A regex character set
    * @param  {Integer} [times=3] Minimum recursion number
    * @return {Boolean}
    */
