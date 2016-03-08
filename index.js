@@ -16,7 +16,6 @@ var regTest = function regTest(exp, str) {
 var containsSequentialsFrom = function containsSequentialsFrom(orderedLists, password, times) {
   times = defaultsTo(times, 3);
   var len = password.length;
-  var passwordArr = password.split('');
   var found = false;
 
   password.split('').forEach(function (letter, index) {
