@@ -112,6 +112,11 @@ Checks that the given password does not a possible birth-date.
 | --- | --- | --- |
 | password | <code>String</code> | Password string |
 
+## Related
+
+- [PasswordRuler](https://github.com/tameraydin/password-ruler)
+- [PasswordRuler Add-ons](https://github.com/tameraydin/password-ruler-addons)
+
 ## License
 
 MIT [http://tameraydin.mit-license.org/](http://tameraydin.mit-license.org/)
